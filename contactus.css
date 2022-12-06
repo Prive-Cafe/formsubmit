@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+	font-family: sans-serif;
+}
+
+body{
+   
+	min-height:100vh;
+	overflow-x: hidden;
+	background-attachment: scroll;
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	box-sizing: border-box;
+}
+.cover {
+	 background-image: url(bg2.png);
+	background-size: cover;
+	width: 100vw;
+	position: relative;
+}
+.bg-color {
+	background-color: rgba(0,0,0,0.1);
+}
+.content{
+	width: 100%;
+	height: 100vh;
+	padding-left: 8%;
+	padding-right: 8%;
+	margin-top: 10%;
+	z-index: 1;
+}
+.nav{
+	height: 80px;
+    background-color: black;
+	display: flex;
+    align-items: center;
+	justify-content: space-around;
+	margin: auto;
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+}
+
+a, .bn{
+	position: relative;
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 18px;
+	letter-spacing: 0.5px;
+	padding: 0 10px;
+
+}
+.nav a:after{
+	content: "";
+	position: absolute;
+	background-color: #ff3c78;
+	height: 3px;
+	width: 0;
+	left: 0;
+	bottom: -10px;
+	transition: 0.3s;
+}
+.nav a:hover{
+	color: #ffffff;
+}
+.nav a:hover:after{
+	width: 100%;
+}
+.t-container h1{
+	font-size: 50px;
+	margin-top: 30px;
+	margin-bottom:30px;
+}
+.t-container{
+	display: flex;
+	justify-content:center;
+	flex-direction: column;
+	padding: 0.2em;
+	-wekbit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+.data {
+	margin: 1em 0;
+	min-width: 300px;
+	font-size: 20px;
+}
+.data td{
+	margin: .5em 1em;
+	display: block;
+}
+.data td:first-child{
+	padding-top: .5em;
+}
+.data td:last-child{
+	padding-bottom: .5em;
+}
+.data td::before{
+	display: inline-block;
+	width: 6.5em;
+}
+@media (min-width: 600px){
+	.data td::before{
+		display: none;
+	}
+	.data td{
+		display: table-cell;
+		padding: .25em .5em;
+		padding: 1em !important;
+	}
+	.data td:first-child{
+		padding: 0;
+	}
+	.data td:last-child{
+		padding: 0;
+	}
+}
+
+body{
+	text-align: center;
+}
+
+.container{
+	width: 90%;
+	margin: 50px auto;
+}
+.contact-box{
+	display: flex;
+	
+}
+.contact-left{
+	flex-basis: 70%;
+	padding: 40px 60px;
+	box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+	border-radius:35px;
+	background: rgba(255,255,255,0.1);
+	backdrop-filter: blur(10px);
+}
+.contact-right{
+	flex-basis: 30%;
+	padding: 40px;
+	box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+	border-radius: 35px;
+	background: rgba(255,255,255,0.1);
+	backdrop-filter: blur(10px);
+	margin-left: 30px;
+}
+h1{
+	margin-bottom: 10px;
+	color: black;
+}
+p{
+	color: black;
+	margin-bottom: 20px;
+}
+
+.contact-left h3{
+	margin-bottom: 30px;
+	font-weight: 900;
+	color: black;
+	text-align: left;
+}
+.contact-right h3{
+	margin-bottom: 30px;
+	font-weight: 900;
+	color: black;
+	text-align: left;
+}
+.input-row{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+.input-row .input-group{
+	flex-basis: 45%;
+}
+input{
+	width: 100%;
+	border: none;
+	border-bottom: 2px solid black;
+	outline: none;
+	padding-bottom: 5px;
+	background: none;
+}
+.contact-left textarea{
+	width: 100%;
+	height: 100px;
+	border: 1px solid black;
+	outline: none;
+	resize: none;
+	padding: 10px;
+	resize: none;
+	font-size: 15px;
+	border-radius: 10px;
+	box-sizing: border-box; 
+	background: none;
+	border-color: black;
+}
+textarea:is(:focus, :valid){
+	border-color: brown;
+	border-width: 2px;
+	padding: 14px;
+}
+label{
+	margin-bottom: 7px;
+	display: block;
+	color: brown;
+	text-align: left;
+}
+button{
+	width: 100px;
+	background: black;
+	border: none;
+	outline: none;
+	color: white;
+	height: 35px;
+	border-radius: 30px;
+	margin-top: 20px; 
+	box-shadow: 0px 5px 15px 0px rgba(28,0,181,0.3);
+	cursor: pointer;
+	transition: 0.3s;
+}
+button:hover{
+	background: brown;
+	opacity: 0.7;
+}
+}
+.contact-right a{
+	color: white;
+	font-size: 20px;
+	text-decoration: none;
+}
+.map{
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 50px;
+}
+.contact-right .InfoBox div{
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+.contact-right .InfoBox div span{
+	min-width: 40px;
+	height: 40px;
+	color: white;
+	background: brown;
+	display: flex;
+	justify-content: center;
+	align-items	: center;
+	font-size: 1.5em;
+	border-radius: 50%;
+	margin-right: 15px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+.contact-right .InfoBox div p:hover{
+	color: brown;
+}
+.contact-right .InfoBox div a:hover{
+	color: brown;
+}
+.wrapper{
+	display: inline-flex;
+	margin-top: 15px;
+}
+.wrapper .icon{
+	margin-right: 10px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	text-align: center;
+	justify-content: center;
+	flex-direction: column;
+	position: relative;
+	z-index: 2;
+	transition: all 0.2s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.wrapper .icon li{
+	list-style: none;
+	height: 42px;
+	width: 44px;
+	display: block;
+	background: white;
+	border-radius: 50%;
+	box-shadow:0 10px 10px rgba(0, 0, 0, 0.1);
+	position: relative;
+	z-index: 2;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.wrapper .icon li a{
+	font-size: 25px;
+	line-height: 50px;
+	color: black;
+}
+.wrapper .fb:hover li a{
+	color:  #3B5999;
+}
+.wrapper .ig:hover li a{
+	color:  #e1306c;
+}
+.wrapper .twt:hover li a{
+	color:  #46C1F6;
+}
+.wrapper .icon .style{
+	background: white;
+	color: white;
+	font-size: 18px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+	padding: 10px 18px;
+	border-radius: 25px;
+	position: absolute;
+	top: 0px;
+	opacity: 0;
+	pointer-events: none;
+	transition: all 0.2s cubic-bezier(0.68,-0.55,0.265,1.55);
+
+}
+.wrapper .icon .style:before{
+	position: absolute;
+	content:"";
+	height: 15px;
+	width: 15px;
+	background: white;
+	bottom: -3px;
+	left: 50%;
+	transform: translate(-50%) rotate(45deg);
+	transition: all 0.2s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.wrapper .icon:hover .style{
+	top: -55px;
+	opacity: 1;
+	pointer-events: auto;
+}
+.wrapper .icon:hover .li,
+.wrapper .icon:hover .style{
+	text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+}
+.wrapper .fb:hover .li,
+.wrapper .fb:hover .style,
+.wrapper .fb:hover .style:before{
+	background: #3B5999;
+}
+.wrapper .ig:hover .li,
+.wrapper .ig:hover .style,
+.wrapper .ig:hover .style:before{
+	background: #e1306c;
+}
+.wrapper .twt:hover .li,
+.wrapper .twt:hover .style,
+.wrapper .twt:hover .style:before{
+	background: #46C1F6;;
+}
